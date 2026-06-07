@@ -86,7 +86,7 @@ export function ProjectSkillImpactGraph({ data }: GraphProps) {
       <SectionHeader
         eyebrow="WORK CONNECTIONS"
         title="프로젝트와 기술, 성과의 연결"
-        summary="각 프로젝트에서 맡은 기술과 결과를 함께 확인할 수 있습니다. 노드를 선택하면 관련 근거만 강조됩니다."
+        summary="앱 출시, 백엔드, 데이터, 인프라, 자동화를 실제 제품 성과로 이어 온 흐름입니다."
       />
       <div className="graph-shell">
         <fieldset className="graph-controls">

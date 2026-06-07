@@ -10,8 +10,8 @@ export function GraphDetail({ node }: GraphDetailProps) {
     return (
       <aside className="graph-detail">
         <span className="sticker-label">detail</span>
-        <h3>노드를 선택하세요</h3>
-        <p>프로젝트, 기술, 성과 노드를 선택하면 관련 근거와 링크가 표시됩니다.</p>
+        <h3>프로젝트 근거</h3>
+        <p>프로젝트, 기술, 성과가 이어지는 지점을 요약합니다.</p>
       </aside>
     )
   }
