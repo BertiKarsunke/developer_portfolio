@@ -176,6 +176,7 @@ a {
   position: relative;
   width: fit-content;
   max-width: 100%;
+  padding-right: 0.18em;
 }
 
 .outlined {
@@ -325,6 +326,11 @@ a {
   text-wrap: balance;
   text-transform: uppercase;
   word-break: keep-all;
+}
+
+.contact-section .sticker-label {
+  display: flex;
+  margin-bottom: 1.25rem;
 }
 
 .project-grid,
@@ -746,7 +752,7 @@ a {
   .hero-title-line::after {
     position: absolute;
     top: 0.08em;
-    right: -0.08em;
+    right: 0;
     bottom: 0.08em;
     width: 0.08em;
     background: #000;
@@ -866,7 +872,7 @@ a {
   }
 
   to {
-    max-width: 6ch;
+    max-width: 6.4ch;
   }
 }
 
@@ -876,7 +882,7 @@ a {
   }
 
   to {
-    max-width: 7ch;
+    max-width: 8.2ch;
   }
 }
 
@@ -886,7 +892,7 @@ a {
   }
 
   to {
-    max-width: 8ch;
+    max-width: 8.6ch;
   }
 }
 
