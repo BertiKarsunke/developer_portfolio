@@ -84,7 +84,7 @@ export function ProjectSkillImpactGraph({ data }: GraphProps) {
   return (
     <section className="page-section page-section--dark" id="impact-map">
       <SectionHeader
-        eyebrow="D3 IMPACT MAP"
+        eyebrow="WORK CONNECTIONS"
         title="프로젝트와 기술, 성과의 연결"
         summary="각 프로젝트에서 맡은 기술과 결과를 함께 확인할 수 있습니다. 노드를 선택하면 관련 근거만 강조됩니다."
       />
@@ -117,7 +117,7 @@ export function ProjectSkillImpactGraph({ data }: GraphProps) {
         <div className="graph-layout">
           <section className="graph-canvas" aria-label="프로젝트 스킬 성과 네트워크">
             <svg role="img" viewBox={`0 0 ${graphSize.width} ${graphSize.height}`}>
-              <title>Project-Skill-Impact Network</title>
+              <title>Project, Technology, Outcome Network</title>
               {graph.edges.map((edge) => {
                 const source = layoutNodes.find((node) => node.id === edge.source)
                 const target = layoutNodes.find((node) => node.id === edge.target)

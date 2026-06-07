@@ -32,8 +32,8 @@ export function Hero() {
           <span className="hero-stat__label">Mobile / Backend / Web</span>
         </div>
         <div className="hero-stat hero-stat--violet">
-          <strong>D3</strong>
-          <span className="hero-stat__label">Project-Skill-Impact Map</span>
+          <strong>Ops</strong>
+          <span className="hero-stat__label">Launch, Monitor, Improve</span>
         </div>
         <div className="hero-stat hero-stat--red">
           <Sparkles aria-hidden="true" strokeWidth={3} />
