@@ -1,0 +1,161 @@
+import type { Project } from "../types/portfolio"
+
+export const projects = [
+  {
+    id: "cashrun",
+    title: "CashRun",
+    company: "FSN 카울리",
+    years: "2022 - Present",
+    role: "React Native / NestJS / AWS",
+    problem: "광고 시청과 리워드 지급 흐름을 안정적으로 연결해야 하는 앱테크 서비스",
+    solution:
+      "React Native와 NestJS 기반으로 모바일 클라이언트와 REST API를 개발하고 AWS EC2/RDS 인프라를 운영했습니다.",
+    outcome: "AdMob, AppLovin 리워드 플로우와 앱/백엔드 기능을 함께 다룬 제품 운영 경험",
+    stack: ["React Native", "NestJS", "Node.js", "AWS", "TypeScript"],
+    categories: ["mobile", "backend", "cloud-ci"],
+    impacts: ["store-shipping"],
+    links: [
+      {
+        label: "Android",
+        href: "https://play.google.com/store/apps/details?id=kr.co.doohub.cashrun&hl=ko",
+      },
+    ],
+    featured: true,
+  },
+  {
+    id: "nan-ne-pyeon",
+    title: "난네편",
+    company: "FSN 카울리",
+    years: "2022 - Present",
+    role: "Flutter / Next.js / AWS",
+    problem: "편의점 정보를 모바일에서 빠르게 탐색하는 하이브리드 서비스",
+    solution:
+      "Flutter 앱과 Next.js 웹 리소스를 구현하고 AWS EC2/RDS 기반 운영 흐름을 구성했습니다.",
+    outcome: "iOS와 Android에 공개된 생활 정보 서비스의 제품 개발과 운영",
+    stack: ["Flutter", "Next.js", "AWS", "TypeScript", "iOS", "Android"],
+    categories: ["mobile", "frontend", "cloud-ci"],
+    impacts: ["store-shipping"],
+    links: [
+      {
+        label: "Android",
+        href: "https://play.google.com/store/apps/details?id=kr.co.doohub.pyeonstore",
+      },
+      {
+        label: "iOS",
+        href: "https://apps.apple.com/kr/app/id1616673658",
+      },
+    ],
+    featured: true,
+  },
+  {
+    id: "my1pick",
+    title: "My1pick",
+    company: "FSN 카울리",
+    years: "2022 - Present",
+    role: "iOS / Android / Spring Boot / Angular",
+    problem: "아이돌, 트로트 팬 커뮤니티를 위한 하이브리드 앱과 웹 서비스 운영",
+    solution:
+      "Swift/Kotlin 기반 웹뷰 앱과 Spring Boot, Angular 웹 애플리케이션 개발을 함께 수행했습니다.",
+    outcome: "팬 커뮤니티 서비스의 모바일, 웹, 백엔드 레이어를 연결한 제품 경험",
+    stack: ["Swift", "Kotlin", "Spring Boot", "Angular", "AWS"],
+    categories: ["mobile", "backend", "frontend"],
+    impacts: ["store-shipping"],
+    links: [
+      {
+        label: "Android",
+        href: "https://play.google.com/store/apps/details?id=com.my1pick.android&hl=ko&gl=US",
+      },
+    ],
+    featured: true,
+  },
+  {
+    id: "figma-plugin",
+    title: "Figma 업무자동화 플러그인",
+    company: "FSN 카울리",
+    years: "2025 - Present",
+    role: "React TypeScript / FastAPI / Figma API",
+    problem: "반복되는 Figma 업무와 데이터 연동 작업을 자동화해야 하는 내부 워크플로우",
+    solution:
+      "React UI, FastAPI, MySQL/SQLite, Figma API를 연결해 업무 자동화 플러그인을 개발했습니다.",
+    outcome: "디자인-개발 협업 프로세스를 줄이는 내부 생산성 도구",
+    stack: ["React", "TypeScript", "FastAPI", "MySQL", "SQLite", "Figma API"],
+    categories: ["frontend", "backend", "automation"],
+    impacts: ["workflow-automation"],
+    links: [],
+    featured: true,
+  },
+  {
+    id: "smart-palette",
+    title: "Smart Palette",
+    company: "구니스",
+    years: "2014 - 2017",
+    role: "iOS / Android / Hardware Integration",
+    problem: "하드웨어 팔레트와 모바일 캔버스를 연결하는 디바이스 연동형 앱",
+    solution:
+      "Android Java, iOS Objective-C, OpenGL Canvas, Bluetooth/Serial 연동, PHP REST API를 구현했습니다.",
+    outcome: "삼성벤처투자 유치, 공공데이터 창업경진대회 대통령상 등 제품 성과",
+    stack: ["Objective-C", "Java", "OpenGL", "Bluetooth", "PHP", "Azure"],
+    categories: ["mobile", "backend"],
+    impacts: ["award-investment", "store-shipping"],
+    links: [
+      {
+        label: "iOS",
+        href: "https://apps.apple.com/kr/app/smartpallete/id1257597770",
+      },
+    ],
+    featured: true,
+  },
+  {
+    id: "channelon-cygnus",
+    title: "ChannelOn / Cygnus",
+    company: "빌트온",
+    years: "2018 - 2020",
+    role: "React / TypeScript / Elasticsearch",
+    problem: "오픈마켓 유입 로그와 광고 수익률을 수집, 분석, 시각화하는 플랫폼",
+    solution:
+      "Elasticsearch, Puppeteer, Redis, MySQL 기반 수집/저장과 React TypeScript 관리자 UI를 개발했습니다.",
+    outcome: "오픈마켓 운영 데이터를 제품 의사결정 화면으로 전환한 데이터 플랫폼 경험",
+    stack: ["React", "TypeScript", "Node.js", "Elasticsearch", "Puppeteer", "Redis"],
+    categories: ["frontend", "backend", "data-realtime"],
+    impacts: ["data-visualization"],
+    links: [],
+    featured: true,
+  },
+  {
+    id: "livechaton",
+    title: "LiveChatOn",
+    company: "빌트온",
+    years: "2018 - 2020",
+    role: "Node.js / Socket.IO / Flutter",
+    problem: "오픈마켓 고객 상담을 실시간으로 처리하는 채팅 솔루션",
+    solution:
+      "Socket.IO 웹소켓 서버, 상담사 UI, 모바일 클라이언트, Elasticsearch 저장 연동을 구현했습니다.",
+    outcome: "실시간 상담 데이터 흐름과 모바일 앱을 함께 운영한 커뮤니케이션 제품",
+    stack: ["Node.js", "Socket.IO", "Flutter", "MongoDB", "Redis", "Elasticsearch"],
+    categories: ["backend", "mobile", "data-realtime"],
+    impacts: ["realtime-chat", "store-shipping"],
+    links: [
+      {
+        label: "iOS",
+        href: "https://apps.apple.com/tt/app/livechaton/id1494411632?ign-mpt=uo%3D2",
+      },
+    ],
+    featured: false,
+  },
+  {
+    id: "grow-ci",
+    title: "Grow / Hunet CI-CD",
+    company: "휴넷",
+    years: "2020 - 2022",
+    role: "Flutter / Fastlane / TeamCity",
+    problem: "모바일 앱 개발, 배포, 유지보수 흐름을 안정화해야 하는 교육 서비스",
+    solution:
+      "Flutter 앱 개발, AWS SNS Push, Fastlane과 TeamCity 기반 모바일 CI/CD 시스템을 구축했습니다.",
+    outcome: "교육 서비스 앱 운영과 배포 자동화를 함께 수행한 제품 운영 경험",
+    stack: ["Flutter", "Fastlane", "TeamCity", "AWS SNS", "Objective-C", "Vue.js"],
+    categories: ["mobile", "cloud-ci", "frontend"],
+    impacts: ["ci-cd", "store-shipping"],
+    links: [],
+    featured: false,
+  },
+] satisfies readonly Project[]
