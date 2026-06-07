@@ -3,8 +3,7 @@ import type { OpenSourceActivity } from "../types/portfolio"
 export const openSource = {
   source: "GitHub public REST + GraphQL API / BertiKarsunke",
   checkedAt: "2026-06-07",
-  summary:
-    "브라우저 확장, Cloudflare Worker, 자동화 도구, 모바일/플러그인 생태계를 중심으로 공개 저장소 활동을 이어 왔습니다.",
+  summary: "공개 저장소에서는 브라우저 확장, Cloudflare Worker, 자동화 도구를 주로 다룹니다.",
   metrics: [
     {
       label: "Public repos",
