@@ -11,7 +11,7 @@ export function GraphDetail({ node }: GraphDetailProps) {
       <aside className="graph-detail">
         <span className="sticker-label">detail</span>
         <h3>노드를 선택하세요</h3>
-        <p>프로젝트, 스킬, 성과 노드를 선택하면 연결된 근거와 링크가 이곳에 표시됩니다.</p>
+        <p>프로젝트, 기술, 성과 노드를 선택하면 관련 근거와 링크가 표시됩니다.</p>
       </aside>
     )
   }

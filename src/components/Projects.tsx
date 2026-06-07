@@ -9,8 +9,8 @@ export function Projects() {
     <section className="page-section" id="projects">
       <SectionHeader
         eyebrow="SELECTED WORK"
-        title="제품의 여러 층을 직접 잇는 프로젝트"
-        summary="모바일, 백엔드, 데이터, 인프라, 자동화까지 실제 제품의 운영면을 기준으로 구성했습니다."
+        title="제품 전반을 다룬 프로젝트"
+        summary="모바일 앱, 백엔드, 데이터, 인프라, 자동화를 실제 서비스 안에서 직접 설계하고 구현했습니다."
       />
       <div className="project-grid">
         {featuredProjects.map((project) => (

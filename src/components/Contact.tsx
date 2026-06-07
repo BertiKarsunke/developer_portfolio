@@ -7,8 +7,8 @@ export function Contact() {
     <section className="contact-section" id="contact">
       <div>
         <span className="sticker-label">CONTACT</span>
-        <h2>제품을 실제로 움직이게 만드는 개발자를 찾고 있다면</h2>
-        <p>현재 공개 가능한 연락 채널은 GitHub와 LinkedIn입니다.</p>
+        <h2>제품 운영까지 책임지는 개발자</h2>
+        <p>공개 이력과 연락 채널은 GitHub와 LinkedIn에서 확인할 수 있습니다.</p>
       </div>
       <div className="hero-actions">
         <NeoButton href={portfolioData.profile.github.href}>

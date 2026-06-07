@@ -85,8 +85,8 @@ export function ProjectSkillImpactGraph({ data }: GraphProps) {
     <section className="page-section page-section--dark" id="impact-map">
       <SectionHeader
         eyebrow="D3 IMPACT MAP"
-        title="프로젝트, 스킬, 성과가 연결되는 방식"
-        summary="이 지도는 이력서의 프로젝트를 기술 범위와 제품 성과로 연결합니다. 노드를 선택하면 관련 근거만 강조됩니다."
+        title="프로젝트와 기술, 성과의 연결"
+        summary="각 프로젝트에서 맡은 기술과 결과를 함께 확인할 수 있습니다. 노드를 선택하면 관련 근거만 강조됩니다."
       />
       <div className="graph-shell">
         <fieldset className="graph-controls">

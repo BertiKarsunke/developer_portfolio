@@ -6,8 +6,8 @@ export function Skills() {
     <section className="page-section" id="skills">
       <SectionHeader
         eyebrow="STACK RANGE"
-        title="모바일에서 자동화까지 이어지는 기술 범위"
-        summary="스킬은 단순 나열보다 프로젝트에서 맡은 역할을 설명하는 그룹으로 묶었습니다."
+        title="모바일부터 자동화까지"
+        summary="앱, 웹, API, 인프라, 데이터, 자동화를 실제 서비스 안에서 다뤄 왔습니다."
       />
       <div className="skills-grid">
         {portfolioData.skills.map((group) => (

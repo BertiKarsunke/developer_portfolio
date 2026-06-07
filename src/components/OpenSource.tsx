@@ -19,7 +19,7 @@ export function OpenSource() {
     <section className="page-section page-section--violet" id="open-source">
       <SectionHeader
         eyebrow="OPEN SOURCE TRACE"
-        title="공개 저장소에 남긴 작은 도구와 실험들"
+        title="공개 저장소 활동"
         summary={openSource.summary}
       />
       <div className="open-source-layout">

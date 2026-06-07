@@ -4,7 +4,7 @@ export const openSource = {
   source: "GitHub public REST + GraphQL API / BertiKarsunke",
   checkedAt: "2026-06-07",
   summary:
-    "최근 공개 GitHub 내역은 브라우저 확장, Cloudflare Worker, 자동화 도구, 모바일/플러그인 생태계 fork를 중심으로 이어집니다. 외부 기여가 확인되지 않는 항목은 repository ownership과 fork 탐색으로 분리해 표기했습니다.",
+    "브라우저 확장, Cloudflare Worker, 자동화 도구, 모바일/플러그인 생태계를 중심으로 공개 저장소 활동을 이어 왔습니다.",
   metrics: [
     {
       label: "Public repos",
@@ -80,7 +80,7 @@ export const openSource = {
       href: "https://github.com/BertiKarsunke/ReportSkills_ko",
       role: "Fork",
       language: "Shell",
-      description: "개발자 리포트/스킬 문서화 워크플로우를 한국어 환경으로 탐색한 fork",
+      description: "개발자 리포트와 스킬 문서화 흐름을 한국어 환경에서 살펴본 fork",
       updated: "2026-06-06",
       tags: ["Documentation", "Automation", "Korean"],
     },
@@ -97,8 +97,8 @@ export const openSource = {
     { date: "2026-06-07", count: 1 },
   ],
   ecosystemNotes: [
-    "Android/iOS UI, Flutter/APNS, AppFlowy, Cloudflare Workers 등 제품 개발 생태계를 fork로 추적",
-    "최근 owner repo는 브라우저 확장과 업무 자동화처럼 작고 반복 가능한 문제 해결에 집중",
-    "GitHub GraphQL 기준 최근 1년 외부 repositoryContributedTo는 0건으로 확인되어 과장 없이 분리 표기",
+    "Android/iOS UI, Flutter/APNS, AppFlowy, Cloudflare Workers 등 제품 개발 생태계를 꾸준히 확인",
+    "최근 소유 저장소는 브라우저 확장과 업무 자동화처럼 작고 반복 가능한 문제 해결에 집중",
+    "GitHub GraphQL 기준 최근 1년 외부 repositoryContributedTo는 0건으로 확인",
   ],
 } satisfies OpenSourceActivity

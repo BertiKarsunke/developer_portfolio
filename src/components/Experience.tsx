@@ -6,8 +6,8 @@ export function Experience() {
     <section className="page-section page-section--yellow" id="experience">
       <SectionHeader
         eyebrow="CAREER LOG"
-        title="제품 운영 경력 타임라인"
-        summary="이력서 원본의 민감 정보는 제외하고 공개 가능한 경력과 산출물 중심으로 정리했습니다."
+        title="제품 운영 경력"
+        summary="서비스 출시, 운영, 자동화, 개선을 맡아 온 주요 경력입니다."
       />
       <div className="experience-list">
         {portfolioData.experience.map((item) => (

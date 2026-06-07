@@ -4,7 +4,7 @@ export const profile = {
   name: "이성진",
   headline: "14년+ 제품을 끝까지 만드는 Full-stack / Product Developer",
   summary:
-    "모바일 앱, 백엔드 API, AWS 인프라, 데이터 시각화, CI/CD, 업무 자동화까지 제품 운영에 필요한 레이어를 직접 설계하고 구현해 온 개발자입니다.",
+    "모바일 앱, 백엔드 API, AWS 인프라, 데이터 시각화, CI/CD, 업무 자동화를 직접 설계하고 구현해 온 개발자입니다.",
   github: {
     label: "GitHub",
     href: "https://github.com/BertiKarsunke",
@@ -19,7 +19,7 @@ export const skills = [
   {
     id: "mobile",
     label: "Mobile",
-    summary: "React Native, Flutter, iOS, Android 기반 앱 출시와 운영",
+    summary: "React Native, Flutter, iOS, Android 앱 출시와 운영",
     skills: ["React Native", "Flutter", "iOS", "Android", "Swift", "Objective-C", "Kotlin"],
   },
   {
@@ -43,13 +43,13 @@ export const skills = [
   {
     id: "cloud-ci",
     label: "Cloud / CI-CD",
-    summary: "AWS 인프라, Fastlane, TeamCity 기반 배포 자동화",
+    summary: "AWS 인프라와 Fastlane, TeamCity 배포 자동화",
     skills: ["AWS EC2", "RDS", "ElastiCache", "SQS", "SNS", "Fastlane", "TeamCity"],
   },
   {
     id: "automation",
     label: "Automation",
-    summary: "Figma API와 내부 워크플로우 자동화",
+    summary: "Figma API와 내부 업무 자동화",
     skills: ["Figma API", "React", "FastAPI", "MySQL", "SQLite", "Workflow Automation"],
   },
 ] satisfies readonly SkillGroup[]
@@ -63,7 +63,7 @@ export const impacts = [
   {
     id: "store-shipping",
     label: "App Store Shipping",
-    summary: "iOS, Android, Flutter, React Native 앱 출시와 운영 경험",
+    summary: "iOS, Android, Flutter, React Native 앱 출시와 운영",
   },
   {
     id: "realtime-chat",
