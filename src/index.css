@@ -231,6 +231,7 @@ a {
   gap: 0.5rem;
   padding: clamp(1rem, 3vw, 2rem);
   transform: rotate(1deg);
+  will-change: transform;
 }
 
 .hero-stat strong {
@@ -254,6 +255,18 @@ a {
 
 .hero-stat--red {
   background: #ff6b6b;
+}
+
+.hero-stat:nth-child(1) {
+  animation-delay: 80ms;
+}
+
+.hero-stat:nth-child(2) {
+  animation-delay: 180ms;
+}
+
+.hero-stat:nth-child(3) {
+  animation-delay: 280ms;
 }
 
 .page-section {
@@ -373,6 +386,11 @@ a {
   background: #c4b5fd;
 }
 
+.project-card:hover .project-outcome,
+.open-source-card:hover .project-outcome {
+  background: #ff6b6b;
+}
+
 .chip-row {
   display: flex;
   flex-wrap: wrap;
@@ -387,6 +405,14 @@ a {
   background: #fffdf5;
   font-size: 0.82rem;
   font-weight: 700;
+  transition:
+    transform 140ms ease-out,
+    background 140ms ease-out;
+}
+
+.neo-card:hover .neo-chip {
+  background: #fff;
+  transform: translateY(-2px);
 }
 
 .project-links a {
@@ -455,6 +481,7 @@ a {
   padding: 0.45rem;
   font-weight: 700;
   text-align: center;
+  transform-origin: bottom;
 }
 
 .activity-strip__day strong {
@@ -559,6 +586,9 @@ a {
 .graph-edge {
   stroke: #000;
   opacity: 0.32;
+  transition:
+    opacity 180ms ease-out,
+    stroke-width 180ms ease-out;
 }
 
 .graph-edge.is-active {
@@ -589,6 +619,10 @@ a {
   opacity: 0.78;
   transform: translate(-50%, -50%);
   box-shadow: 4px 4px 0 #000;
+  transition:
+    opacity 160ms ease-out,
+    box-shadow 160ms ease-out,
+    transform 160ms ease-out;
 }
 
 .graph-node-button--circle {
@@ -617,6 +651,14 @@ a {
   box-shadow: 8px 8px 0 #ff6b6b;
 }
 
+.graph-node-button:not(.graph-node-button--diamond):hover {
+  transform: translate(-50%, -50%) scale(1.06);
+}
+
+.graph-node-button--diamond:hover {
+  transform: translate(-50%, -50%) rotate(45deg) scale(1.06);
+}
+
 .graph-detail,
 .relationship-fallback__item {
   display: grid;
@@ -632,6 +674,16 @@ a {
   color: inherit;
   text-align: left;
   box-shadow: 5px 5px 0 #000;
+  transition:
+    transform 140ms ease-out,
+    box-shadow 140ms ease-out,
+    background 140ms ease-out;
+}
+
+.relationship-fallback__item:hover {
+  transform: translateY(-4px);
+  background: #ff6b6b;
+  box-shadow: 8px 8px 0 #000;
 }
 
 .relationship-fallback__item.is-selected {
@@ -663,6 +715,162 @@ a {
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
+  }
+
+  .hero-name,
+  .hero-copy h1,
+  .hero-copy p,
+  .hero-actions,
+  .section-header,
+  .open-source-metric,
+  .activity-strip,
+  .open-source-notes,
+  .graph-shell,
+  .contact-section {
+    animation: rise-in 460ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .hero-copy h1 {
+    animation-delay: 80ms;
+  }
+
+  .hero-copy p {
+    animation-delay: 140ms;
+  }
+
+  .hero-actions {
+    animation-delay: 200ms;
+  }
+
+  .hero-stat--yellow,
+  .hero-stat--red {
+    animation: hero-stat-right-in 460ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .hero-stat--violet {
+    animation: hero-stat-left-in 460ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .neo-card {
+    animation: fade-in 420ms ease-out both;
+  }
+
+  .neo-card:nth-child(2n),
+  .open-source-metric:nth-child(2n),
+  .activity-strip__day:nth-child(2n) {
+    animation-delay: 80ms;
+  }
+
+  .neo-card:nth-child(3n),
+  .open-source-metric:nth-child(3n),
+  .activity-strip__day:nth-child(3n) {
+    animation-delay: 140ms;
+  }
+
+  .activity-strip__day {
+    animation: activity-grow 520ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .graph-node-button {
+    animation: graph-node-in 420ms cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  }
+
+  .graph-node-button--diamond {
+    animation-name: graph-diamond-in;
+  }
+
+  .graph-node-button:nth-child(2n) {
+    animation-delay: 70ms;
+  }
+
+  .graph-node-button:nth-child(3n) {
+    animation-delay: 120ms;
+  }
+
+  .graph-node-button:nth-child(5n) {
+    animation-delay: 170ms;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes activity-grow {
+  from {
+    opacity: 0;
+    transform: scaleY(0.2);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes hero-stat-right-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) rotate(1deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(1deg);
+  }
+}
+
+@keyframes hero-stat-left-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) rotate(-2deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(-2deg);
+  }
+}
+
+@keyframes graph-node-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -42%) scale(0.92);
+  }
+
+  to {
+    opacity: 0.78;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes graph-diamond-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -42%) rotate(45deg) scale(0.92);
+  }
+
+  to {
+    opacity: 0.78;
+    transform: translate(-50%, -50%) rotate(45deg) scale(1);
   }
 }
 
