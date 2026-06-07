@@ -3,6 +3,7 @@ import { portfolioData } from "../data/portfolio"
 
 const navItems = [
   { label: "Projects", href: "#projects" },
+  { label: "Open Source", href: "#open-source" },
   { label: "Map", href: "#impact-map" },
   { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },

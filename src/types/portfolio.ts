@@ -56,6 +56,37 @@ export type Experience = {
   readonly highlights: readonly string[]
 }
 
+export type OpenSourceMetric = {
+  readonly label: string
+  readonly value: string
+  readonly detail: string
+}
+
+export type OpenSourceRepo = {
+  readonly name: string
+  readonly href: string
+  readonly role: "Original" | "Fork"
+  readonly language: string
+  readonly description: string
+  readonly updated: string
+  readonly tags: readonly string[]
+}
+
+export type OpenSourceActivityDay = {
+  readonly date: string
+  readonly count: number
+}
+
+export type OpenSourceActivity = {
+  readonly source: string
+  readonly checkedAt: string
+  readonly summary: string
+  readonly metrics: readonly OpenSourceMetric[]
+  readonly repos: readonly OpenSourceRepo[]
+  readonly activityDays: readonly OpenSourceActivityDay[]
+  readonly ecosystemNotes: readonly string[]
+}
+
 export type Impact = {
   readonly id: string
   readonly label: string
@@ -67,6 +98,7 @@ export type PortfolioData = {
   readonly projects: readonly Project[]
   readonly skills: readonly SkillGroup[]
   readonly experience: readonly Experience[]
+  readonly openSource: OpenSourceActivity
   readonly impacts: readonly Impact[]
 }
 

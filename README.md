@@ -39,4 +39,5 @@ GITHUB_PAGES_BASE=/ pnpm run build
 
 - 이력서 PDF 원본은 커밋하지 않습니다.
 - 전화번호, 주소, 비공개 이메일, 희망연봉 같은 민감 정보는 공개 포트폴리오 데이터에 포함하지 않았습니다.
-- 공개 가능한 연락 채널은 현재 GitHub 링크만 사용합니다.
+- 공개 가능한 연락 채널은 현재 GitHub와 LinkedIn 링크만 사용합니다.
+- Open Source 섹션은 `src/data/openSource.ts`의 날짜가 찍힌 GitHub 공개 API 스냅샷입니다.

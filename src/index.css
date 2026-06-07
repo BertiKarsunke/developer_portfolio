@@ -267,6 +267,10 @@ a {
   background: #ffd93d;
 }
 
+.page-section--violet {
+  background: #c4b5fd;
+}
+
 .page-section--dark {
   color: #fff;
   background: #000;
@@ -308,6 +312,7 @@ a {
 }
 
 .project-grid,
+.open-source-grid,
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -340,6 +345,7 @@ a {
 }
 
 .project-card h3,
+.open-source-card h3,
 .skill-card h3,
 .experience-card h3,
 .graph-detail h3 {
@@ -350,6 +356,7 @@ a {
 }
 
 .project-card p,
+.open-source-card p,
 .skill-card p,
 .experience-card p,
 .graph-detail p,
@@ -388,6 +395,99 @@ a {
   gap: 0.3rem;
   border-bottom: 3px solid #000;
   font-weight: 700;
+}
+
+.open-source-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.55fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.open-source-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.open-source-metric,
+.activity-strip,
+.open-source-notes {
+  border: 4px solid #000;
+  background: #fffdf5;
+  box-shadow: 8px 8px 0 #000;
+}
+
+.open-source-metric {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem;
+}
+
+.open-source-metric strong {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 0.9;
+}
+
+.open-source-metric span,
+.open-source-metric p {
+  margin: 0;
+  font-weight: 700;
+}
+
+.activity-strip {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  gap: 0.45rem;
+  align-content: stretch;
+  margin: 0;
+  padding: 1rem;
+}
+
+.activity-strip__day {
+  display: grid;
+  align-content: end;
+  min-height: 8rem;
+  border: 3px solid #000;
+  padding: 0.45rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.activity-strip__day strong {
+  font-size: 1.3rem;
+}
+
+.open-source-card {
+  min-height: 100%;
+}
+
+.open-source-card:nth-child(2n) {
+  background: #ffd93d;
+}
+
+.open-source-card:nth-child(3n) {
+  background: #fffdf5;
+}
+
+.open-source-notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+
+.open-source-notes p {
+  flex-basis: 100%;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.5;
+  word-break: keep-all;
 }
 
 .experience-list {
@@ -588,7 +688,13 @@ a {
   }
 
   .project-grid,
+  .open-source-grid,
   .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .open-source-layout,
+  .open-source-metrics {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -607,9 +713,16 @@ a {
   }
 
   .project-grid,
+  .open-source-grid,
+  .open-source-layout,
+  .open-source-metrics,
   .skills-grid,
   .experience-card {
     grid-template-columns: 1fr;
+  }
+
+  .activity-strip {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .hero-actions,

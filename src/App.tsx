@@ -2,6 +2,7 @@ import { Contact } from "./components/Contact"
 import { Experience } from "./components/Experience"
 import { Header } from "./components/Header"
 import { Hero } from "./components/Hero"
+import { OpenSource } from "./components/OpenSource"
 import { Projects } from "./components/Projects"
 import { Skills } from "./components/Skills"
 import { ProjectSkillImpactGraph } from "./components/visualizations/ProjectSkillImpactGraph"
@@ -14,6 +15,7 @@ export function App() {
       <main>
         <Hero />
         <Projects />
+        <OpenSource />
         <ProjectSkillImpactGraph data={portfolioData} />
         <Experience />
         <Skills />
