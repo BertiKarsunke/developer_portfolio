@@ -745,6 +745,7 @@ a {
 
   .hero-title-line {
     overflow: hidden;
+    visibility: hidden;
     max-width: 0;
     white-space: nowrap;
   }
@@ -868,30 +869,36 @@ a {
 
 @keyframes title-type-builds {
   from {
+    visibility: visible;
     max-width: 0;
   }
 
   to {
+    visibility: visible;
     max-width: 6.4ch;
   }
 }
 
 @keyframes title-type-product {
   from {
+    visibility: visible;
     max-width: 0;
   }
 
   to {
+    visibility: visible;
     max-width: 8.2ch;
   }
 }
 
 @keyframes title-type-systems {
   from {
+    visibility: visible;
     max-width: 0;
   }
 
   to {
+    visibility: visible;
     max-width: 8.6ch;
   }
 }
