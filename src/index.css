@@ -762,29 +762,29 @@ a {
   }
 
   .hero-title-line:nth-child(1) {
-    animation: title-type-builds 540ms steps(6, end) 220ms forwards;
+    animation: title-type-builds 900ms steps(6, end) 160ms forwards;
   }
 
   .hero-title-line:nth-child(2) {
-    animation: title-type-product 680ms steps(7, end) 780ms forwards;
+    animation: title-type-product 1100ms steps(7, end) 1120ms forwards;
   }
 
   .hero-title-line:nth-child(3) {
-    animation: title-type-systems 760ms steps(8, end) 1480ms forwards;
+    animation: title-type-systems 1200ms steps(8, end) 2280ms forwards;
   }
 
   .hero-title-line:nth-child(1)::after {
-    animation: title-caret 540ms steps(2, end) 220ms;
+    animation: title-caret 900ms steps(2, end) 160ms;
   }
 
   .hero-title-line:nth-child(2)::after {
-    animation: title-caret 680ms steps(2, end) 780ms;
+    animation: title-caret 1100ms steps(2, end) 1120ms;
   }
 
   .hero-title-line:nth-child(3)::after {
     animation:
-      title-caret 760ms steps(2, end) 1480ms,
-      title-caret-blink 760ms steps(2, end) 2240ms infinite;
+      title-caret 1200ms steps(2, end) 2280ms,
+      title-caret-blink 760ms steps(2, end) 3480ms infinite;
   }
 
   .hero-copy p {
