@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest"
+import { createLayout } from "../components/visualizations/graphLayout"
 import { buildGraphModel, filterProjectIds, selectVisibleNodeId } from "./graph"
 import { portfolioData } from "./portfolio"
 
@@ -48,5 +49,18 @@ describe("selectVisibleNodeId", () => {
     const selectedNodeId = selectVisibleNodeId("cashrun", new Set(["my1pick"]), ["my1pick"])
 
     expect(selectedNodeId).toBe("my1pick")
+  })
+})
+
+describe("createLayout", () => {
+  it("places skills before projects before impacts from left to right", () => {
+    const model = buildGraphModel(portfolioData)
+    const layout = createLayout(model.nodes, model.edges, true)
+    const mobile = layout.find((node) => node.id === "mobile")
+    const cashrun = layout.find((node) => node.id === "cashrun")
+    const storeShipping = layout.find((node) => node.id === "store-shipping")
+
+    expect(mobile?.x).toBeLessThan(cashrun?.x ?? 0)
+    expect(cashrun?.x).toBeLessThan(storeShipping?.x ?? 0)
   })
 })

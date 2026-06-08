@@ -55,8 +55,8 @@ function createLaneLayout(
   )
 
   return [
-    ...positionLane(projectNodes, graphSize.width * 0.17, offsetSize),
-    ...positionLane(skillNodes, graphSize.width * 0.5, -offsetSize),
+    ...positionLane(skillNodes, graphSize.width * 0.17, offsetSize),
+    ...positionLane(projectNodes, graphSize.width * 0.5, -offsetSize),
     ...positionLane(impactNodes, graphSize.width * 0.83, offsetSize),
   ]
 }
